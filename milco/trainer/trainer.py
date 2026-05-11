@@ -53,7 +53,6 @@ class MilcoTrainer(Trainer):
         self.customed_log = defaultdict(lambda: 0.0)
 
         os.environ.setdefault("WANDB_PROJECT", "milco")
-        os.environ.setdefault("WANDB_ENTITY", "omai-research")
 
         if "args" in kwargs:
             if not kwargs["args"].run_name or kwargs["args"].run_name == kwargs["args"].output_dir:
